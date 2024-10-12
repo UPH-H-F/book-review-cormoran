@@ -39,7 +39,7 @@ The HTML code currently provides static content for the book review. However, it
 
 ## Next Steps
 
-This HTML code provides a solid foundation for a comprehensive book review website. To further improve the functionality and user experience, you can:
+This HTML code provides a solid foundation for a comprehensive book review website. To further improve the functionality and user experience, we can:
 
 - **Add a Navigation Bar**: To allow users to browse other book reviews or sections of the website.
 - **Include More Information**: Expand the book details section with additional information like genre, release date, and other relevant details.

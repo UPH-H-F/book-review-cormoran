@@ -1,0 +1,192 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Arrange elements vertically */
+  align-items: center; /* Center horizontally */
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 0; /* Remove padding to allow logo to control height */
+  text-align: center;
+  width: 80%; /* Adjust width as needed */
+}
+
+.book-container {
+  display: flex;
+  margin: 20px;
+  width: 80%; /* Adjust width as needed */
+}
+
+.book-cover {
+  /* Remove fixed width */
+  margin-right: 20px; /* Maintain margin between cover and info */
+}
+
+.book-info {
+  margin-left: 0; /* Remove margin-left so it's flush with the cover */
+  flex-grow: 1; /* Allow book-info to take remaining space */
+  padding-right: 50px; /* Add padding to the right side */
+}
+
+.book-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Viproman Regular', sans-serif; /* Apply 'Viproman Regular' font */
+}
+
+.author {
+  font-family: Lato, sans-serif; /* Apply Lato font */
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.summary {
+  font-family: Lato, sans-serif; /* Apply Lato font */
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.about-author {
+  font-family: Lato, sans-serif; /* Apply Lato font */
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30px;
+}
+
+.five-books-review {
+  margin-top: 50px;
+  padding: 20px;
+  /* Apply a subtle background color */
+  background-color: #282726; /* Dark gray background */
+  border: 1px solid #ccc;
+  width: 80%; /* Adjust width as needed */
+  font-family: Lato, sans-serif; /* Apply Lato font */
+  font-weight: 400;
+  font-style: normal;
+  color: #f2f2f2; /* Light gray text color */
+}
+
+.comments {
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 80%; /* Adjust width as needed */
+}
+
+.comment {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-content {
+  margin-top: 5px;
+  /* Add background color for user comments */
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 10px; /* Add padding for better visual separation */
+  border-radius: 5px; /* Add rounded corners for a softer look */
+}
+
+.styled {
+  font-family: 'Vollkorn Italic', sans-serif; /* Apply Vollkorn Italic font */
+  font-weight: 400;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 200px; /* Adjust max-width if needed */
+}
+
+/* Import the 'Viproman Regular' font */
+@font-face {
+  font-family: 'Viproman Regular';
+  src: url('viproman-regular.ttf') format('truetype');
+}
+
+/* Import the 'Vollkorn Italic' font */
+@font-face {
+  font-family: 'Vollkorn Italic';
+  src: url('Vollkorn-Italic.ttf') format('truetype');
+}
+
+/* Import the 'Poppins' font */
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-Regular.ttf') format('truetype');
+}
+
+.five-books-review h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #f2f2f2; /* Light gray text color */
+}
+
+.five-books-review p {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem; /* Increased font size */
+  color: #f2f2f2; /* Light gray text color */
+}
+
+/* Style for the reply form */
+.reply-form {
+  margin-top: 20px;
+  border: 1px solid #ddd; /* Subtle border */
+  padding: 20px;
+  border-radius: 8px; /* Softer rounded corners */
+  background-color: #f8f8f8; /* Light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 80%; /* Adjust width as needed */
+}
+
+.reply-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Bold labels for clarity */
+  font-family: 'Poppins', sans-serif; /* Poppins font */
+  color: #333; /* Dark gray label color */
+}
+
+.reply-form input[type="text"],
+.reply-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; /* Lato font for input */
+  color: #555; /* Dark gray text color */
+}
+
+.reply-form textarea {
+  height: 120px;
+}
+
+.reply-form button {
+  background-color: #A6FA9F; /* New button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif; /* Poppins font for button */
+  font-weight: bold; /* Bold button text */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.reply-form button:hover {
+  background-color: #93e68e; /* Darker green on hover */
+}

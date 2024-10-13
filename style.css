@@ -74,18 +74,36 @@ header {
 .comments {
   margin-top: 50px;
   padding: 20px;
-  border: 1px solid #ccc;
+  /* Remove the border from the comments container */
+  /* border: 1px solid #ccc; */
   width: 80%; /* Adjust width as needed */
 }
 
 .comment {
   margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  /* Remove the bottom border */
+  /* border-bottom: 1px solid #ccc; */
   padding: 10px;
+  display: flex; /* Use flexbox for easier alignment */
+  flex-direction: column; /* Arrange author/date and content vertically */
 }
 
 .comment-author {
   font-weight: bold;
+  font-family: 'SkemaProDisplay-Regular', sans-serif; /* Apply SkemaProDisplay-Regular font */
+}
+
+.comment-author-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-date {
+  text-align: right;
+  font-size: 0.8em;
+  color: #888;
+  font-family: 'Julien-Fincker-Ardena-Medium', sans-serif; /* Apply the new font */
 }
 
 .comment-content {
@@ -94,7 +112,13 @@ header {
   background-color: #f0f0f0; /* Light gray background */
   padding: 10px; /* Add padding for better visual separation */
   border-radius: 5px; /* Add rounded corners for a softer look */
+  font-family: 'Proxima Nova', Montserrat, Arial, sans-serif; /* Apply Proxima Nova font */
+  font-size: 16px;
+  color: #1e1915; /* Dark gray text color */
+  line-height: 23px;
+  font-weight: 400;
 }
+
 
 .styled {
   font-family: 'Vollkorn Italic', sans-serif; /* Apply Vollkorn Italic font */
@@ -123,6 +147,24 @@ header {
 @font-face {
   font-family: 'Poppins';
   src: url('Poppins-Regular.ttf') format('truetype');
+}
+
+/* Import the 'Julien-Fincker-Ardena-Medium' font */
+@font-face {
+  font-family: 'Julien-Fincker-Ardena-Medium';
+  src: url('julien-fincker-ardena-medium.otf') format('opentype');
+}
+
+/* Import the 'SkemaProDisplay-Regular' font */
+@font-face {
+  font-family: 'SkemaProDisplay-Regular';
+  src: url('SkemaProDisplay-Regular.ttf') format('truetype');
+}
+
+/* Import the 'Proxima Nova' font */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('ProximaNova-Regular.otf') format('opentype');
 }
 
 .five-books-review h2 {
